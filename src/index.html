@@ -10,34 +10,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/83b1563528.js" crossorigin="anonymous"></script>
 </head>
-<body class="">
+<body class="bg-slate-300 font-Montserrat">
     <main>
-        <nav class="font-Montserrat">
-            <div class="logo-wrapper flex justify-between items-center pe-9"><img src="/asset/logo.png" alt="logo" class="w-44 h-40"> <button><i class="fa-solid fa-plus" style="color: #000000;"></i> Add Book</button></div>
+        <nav class="font-Montserrat bg-white">
+            <div class="logo-wrapper flex justify-between items-center pe-9"><img src="/asset/logo.png" alt="logo" class="w-44 h-40"> <button class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"><i class="fa-solid fa-plus" style="color: inherit;" ></i> Add Book</button></div>
         </nav>
         <section class="libary-section">
             
 
         </section>
 
-        <dialog>
-            <form method="dialog">
-                <h3>Add A New Book</h3>
+        <dialog open class="bg-slate-400 w-72 text-center rounded-lg">
+            <form>
+                <h3 class="my-4 text-xl font-extrabold">Add A New Book</h3>
                 <div>
                     <label for="book-title"></label>
-                    <input type="text" id="book-title" placeholder="Title">
+                    <input type="text" id="book-title" placeholder="Title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 font-bold w-64 p-2.5 mb-3">
                 </div>
                 <div>
                     <label for="author-name"></label>
-                    <input type="text" id="author-name" placeholder="Author">
+                    <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-2.5 mb-3 font-bold" type="text" id="author-name" placeholder="Author">
                 </div>
                <div>
                 <label for="pages"></label>
-                <input type="number" id="pages" placeholder="Pages">
+                <input class="bg-gray-50 border border-gray-300 text-black font-bold text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-2.5 mb-3" type="number" id="pages" placeholder="Pages">
                </div>
-                <div>
-                    <p>Have you read it?</p> <input type="checkbox" id="read">
+                <div class="flex justify-center items-center w-64 h-8 mb-3">
+                    <p>Have you read it?</p> <input class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 ms-7" type="checkbox" id="read">
                 </div>
+                <button class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Submit</button>
             </form>
         </dialog>
     </main>
