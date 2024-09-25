@@ -13,6 +13,8 @@ This project is a simple **Library App** built using **Tailwind CSS** for stylin
 - Books are displayed in a cards format with their details.
 - Data is saved in **Local Storage**, allowing users to retain their library between sessions.
 
+- [Live Site](https://rh0se.github.io/Library-App/)
+
 ## Technologies Used
 
 - **Tailwind CSS**: For responsive and utility-first styling.
