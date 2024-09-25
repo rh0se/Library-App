@@ -54,13 +54,6 @@ If you want to set up a development environment to make changes:
 
 3. Edit the `index.html` and `app.js` files to customize the app according to your needs.
 
-## Contributing
-
-Feel free to contribute to this project by opening issues or submitting pull requests. Whether it's improving the design, functionality, or fixing bugs, your contributions are welcome!
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
