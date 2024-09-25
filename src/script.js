@@ -71,8 +71,10 @@ function Book() {
     }
 
     const deleteBook = (index) => {
-        delete bookData[index];
-        console.log(bookData);
+        bookData = bookData.filter(book => bookData.indexOf(book) !== index);
+        localStorage.setItem('data', JSON.stringify(bookData));
+        /* delete bookData[index];
+        console.log(bookData); */
         Book();
     }
 
