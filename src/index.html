@@ -13,7 +13,7 @@
 <body class="bg-slate-300 font-Montserrat">
     <main class="bg-slate-300">
         <nav class="font-Montserrat bg-white">
-            <div class="logo-wrapper flex justify-between items-center pe-9" ><img src="/asset/logo.png" alt="logo" class="w-44 h-40"> <button id="add-book" class="py-2.5 px-5 me-2 mb-2 text-xl font-extrabold text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"><i class="fa-solid fa-plus" style="color: inherit;" ></i> Add Book</button></div>
+            <div class="logo-wrapper flex justify-between items-center pe-9" ><img src="/asset/logo.png" alt="logo" class="w-44 h-40"> <button id="add-book" class="py-2.5 px-5 me-2 mb-2 text-xl font-extrabold text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" aria-label="Add a Book"><i class="fa-solid fa-plus" style="color: inherit;" ></i> Add Book</button></div>
         </nav>
         <section class="libary-section p-6">
             <div id="library" class="flex gap-6 flex-wrap justify-center">
@@ -27,21 +27,21 @@
             <form method="dialog">
                 <h3 class="my-4 text-xl font-extrabold">Add A New Book</h3>
                 <div>
-                    <label for="book-title"></label>
+                    <label for="book-title" aria-label="Book Title"></label>
                     <input type="text" id="book-title" placeholder="Title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 font-bold w-64 p-2.5 mb-3" name="Title" required>
                 </div>
                 <div>
-                    <label for="author-name"></label>
+                    <label for="author-name" aria-label="Author Name"></label>
                     <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-2.5 mb-3 font-bold" type="text" id="author-name" placeholder="Author" name="Author" required>
                 </div>
                <div>
-                <label for="pages"></label>
+                <label for="pages" aria-label="Numbers of Pages"></label>
                 <input class="bg-gray-50 border border-gray-300 text-black font-bold text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-2.5 mb-3" name="page-Number" type="number" id="pages" placeholder="Pages" required>
                </div>
                 <div class="flex justify-center items-center w-64 h-8 mb-3">
                     <p>Have you read it?</p> <input class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 ms-4" type="checkbox" id="read" name="read-checkbox">
                 </div>
-                <button class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" id="add-button">Submit</button>
+                <button class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" id="add-button" aria-label="Add Book To Library">Submit</button>
             </form>
         </dialog>
     </main>
